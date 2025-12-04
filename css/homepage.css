@@ -1,0 +1,191 @@
+/* Reset + Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header layout */
+.site-header {
+  background-color: #8B0000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  height: 70px;
+}
+
+/* Left side: logo + name */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 50px; /* increased left margin */
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.site-name {
+  font-size: 1rem;
+  font-weight: bold; /* remove bold */
+}
+
+
+/* Right side nav links */
+.header-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 50px; /* increased right margin */
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: normal; /* remove bold */
+}
+
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.hero-content {
+  max-width: 750px;       /* slightly wider for balance */
+  margin-left: 100px; /* keeps left margin consistent */
+}
+
+
+/* Larger heading */
+.hero h1 {
+  font-size: 34px;        /* up from 48px — subtle boost */
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+
+/* Larger paragraph */
+.hero p {
+  font-size: 26px;        /* up from 30px — still clean */
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* Button spacing and sizing */
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-start {
+  background-color: maroon;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* Abstract shape */
+.hero-art {
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+  border-radius: 50% 50% 0 0;
+}
+
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+

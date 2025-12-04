@@ -1,0 +1,258 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fff;  
+  color: #333;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;   
+}
+
+
+
+
+/* HEADER */
+.site-header {
+  background-color: #7a0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  width: 45px;
+  height: 45px;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.header-nav a:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: transparent;
+}
+
+.hero-content {
+  max-width: 750px;       /* slightly wider for balance */
+  margin-left: 100px; /* keeps left margin consistent */
+}
+
+
+/* Larger heading */
+.hero h1 {
+  font-size: 34px;        /* up from 48px — subtle boost */
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+
+/* Larger paragraph */
+.hero p {
+  font-size: 26px;        /* up from 30px — still clean */
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* Button spacing and sizing */
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-start {
+  background-color: maroon;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* Abstract shape */
+.hero-art {
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+  border-radius: 50% 50% 0 0;
+}
+
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+/* TIPS & RESOURCES SECTION */
+.tips-resources {
+  background-color: #f2f4f7; /* light gray background */
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 8%;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Red section title */
+.tips-resources .section-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #b22222; /* dark red tone */
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.tips-resources .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ now only 2 per row */
+  gap: 50px;
+  justify-content: center;
+}
+
+
+/* Individual card box */
+.tips-resources .card {
+  background-color: #e0e0e0; /* light gray card */
+  padding: 30px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.tips-resources .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card titles */
+.tips-resources .card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+/* Optional label text */
+.tips-resources .card .label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Download button */
+.tips-resources .download-btn {
+  background-color: #b22222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tips-resources .download-btn:hover {
+  background-color: #8b1a1a; /* darker red on hover */
+}

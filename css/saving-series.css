@@ -1,0 +1,145 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #7a0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  width: 45px;
+  height: 45px;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.header-nav a:hover {
+  opacity: 0.7;
+}
+
+
+/* Main Section */
+.financial-series {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.financial-series h2 {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  color: #b30000;
+  font-weight: 800;
+}
+
+/* 2x2 fixed grid */
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 554px);
+  grid-auto-rows: 234px;
+  gap: 32px; /* spacing between boxes */
+  justify-content: center;
+}
+
+.series-box {
+  background: #8C0001;
+  color: #fff;
+  border-radius: 10px;
+  width: 554px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.series-box:hover {
+  transform: scale(1.03);
+}
+
+.series-box h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.series-box p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Mobile: stack into single column */
+@media (max-width: 1200px) {
+  .series-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+/* Footer */
+.site-footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 16px 32px;
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.footer-brand { display: flex; align-items: center; }
+.footer-logo { height: 30px; margin-right: 8px; }
+.brand-name { font-weight: 700; font-size: 1.1rem; }
+.footer-nav { display: flex; gap: 16px; }
+.footer-nav a { color: #fff; font-size: 0.95rem; }
+.footer-bottom { text-align: center; margin-top: 12px; font-size: 0.85rem; }
